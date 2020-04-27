@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "bed9636f-c0ec-430e-80a4-8662196dac22",
+		"name": "transactionsapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency=USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/transactions?currency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "user_type=corporate or user_type = individual"
+			},
+			"response": []
+		},
+		{
+			"name": "account_type=main",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "http://localhost:5000/api/transactions?account_type=main"
+			},
+			"response": []
+		},
+		{
+			"name": "account_type=primary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "http://localhost:5000/api/transactions?account_type=primary"
+			},
+			"response": []
+		},
+		{
+			"name": "account_type=secondary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "http://localhost:5000/api/transactions?account_type=secondary"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
