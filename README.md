@@ -1,23 +1,14 @@
-# RestApiNodeExpressMysql
+Rest Api NodeJS Express Mysql
 
 
-Import the express 
+Instruction of repository 	
 
-const express = require('express');
-const app = express();
-const path = require('path');
+* After cloning the repository make sure Node & NPM is installed on your machine.
+* We are using some modules in this app like express modules mysql, nodeman if it is not installed on your machine, then just follow the below command to install all the modules.
 
-// Body Parser Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }))
+npm install 
 
-// set static folder
 
-app.use(express.static(path.join(__dirname,'public')));
 
-app.use('/api/transactions',require('./routes/api/transactions'));
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT,()=>console.log(`Server started on port ${PORT}`));
+ 
 
